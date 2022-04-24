@@ -1,0 +1,5 @@
+frase = input("Escreva uma frase: ").strip()
+na = frase.upper().count("A")
+print(f"Sua frase tem {na} letras A")
+print(frase.upper().find("A") + 1)
+print(frase.upper().rfind("A") + 1)
