@@ -30,7 +30,7 @@ if opcao == 1:
     else:
         print(f"\033[31mQue pena... Eu pensei no numero {sorteado} e você errou!\033[m")
 
-if opcao == 2:
+elif opcao == 2:
     print("A opção selecionada foi \033[4;36mTabuada\033[m !")
     n = int(input("Digite um numero para saber sua tabuada: "))
     time.sleep(1)
@@ -56,7 +56,7 @@ if opcao == 2:
     time.sleep(0.2)
     print(f"{n} x 10 = {n*10}")
 
-if opcao == 3:
+elif opcao == 3:
     print("a opção selecionada foi \033[4;36mVerificador de Multas\033[m !")
     time.sleep(0.5)
     vm = 80
@@ -71,3 +71,5 @@ if opcao == 3:
     else:
         print(f"\033[32mVocê estava dentro do limite de velocidade e não foi multado\033[m")
     print("Obrigado por usar nosso PROGRAMA!")
+else:
+    print("\033[31mERRO: Você não selecionou uma opção valida !\033[m")
